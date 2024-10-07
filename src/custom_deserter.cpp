@@ -24,7 +24,7 @@ public:
     {
         uint32 const days = sConfigMgr->GetOption<uint32>("DeserterDays", 7);
         time_t from = days != 0 ? time - static_cast<time_t>(days) * DAY : 0;
-        QueryResult result = CharacterDatabase.Query("SELECT COUNT(DISTINCT Time) FROM custom_deserter WHERE Guid = {} AND Time BETWEEN {} AND {}", guid, from, time); // Fixme: OnBattlegroundRemovePlayerAtLeave is calling twice
+        QueryResult result = CharacterDatabase.Query("SELECT COUNT(*) FROM custom_deserter WHERE Guid = {} AND Time BETWEEN {} AND {}", guid, from, time);
         if (result)
             return (*result)[0].Get<uint32>();
         else return 0;
