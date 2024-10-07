@@ -3,7 +3,6 @@
  * Written by Nefertumm : https://github.com/Nefertumm
  */
 
-
 // From SC
 void AddCustomDeserterScripts();
 
@@ -14,4 +13,3 @@ void Addmod_custom_deserterScripts()
 {
     AddCustomDeserterScripts();
 }
-
