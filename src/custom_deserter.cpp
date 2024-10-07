@@ -41,7 +41,7 @@ public:
             if (status == STATUS_IN_PROGRESS || status == STATUS_WAIT_JOIN)
             {
                 int32 const baseDuration = sConfigMgr->GetOption<int32>("DeserterBaseDuration", 30) * MINUTE * IN_MILLISECONDS;
-                
+
                 time_t now = GameTime::GetGameTime().count();
                 ObjectGuid::LowType const guid = player->GetGUID().GetCounter();
                 // First we get the amount of deserters from db
