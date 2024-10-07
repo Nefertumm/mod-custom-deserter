@@ -1,0 +1,29 @@
+/*
+ * Copyright (C) 2016+ AzerothCore <www.azerothcore.org>, released under GNU GPLv2+ license
+ * Written by Nefertumm : https://github.com/Nefertumm
+ */
+
+
+[worldserver]
+
+########################################
+# Custom Deserter Module Configuration file
+########################################
+#
+#    DeserterBaseDuration
+#        Description: Base duration for the deserter, in minutes.
+#        Default:     30 - 30 minutes
+#
+#
+
+DeserterBaseDuration = 30
+
+########################################
+#
+#    DeserterDays
+#        Description: From how many days the script will start to count the amount of deserters the player had. Leave it at 0 so it counts all of them independently of time.
+#        Default:     7 days
+#
+#
+
+DeserterDays = 7
